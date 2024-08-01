@@ -1,6 +1,13 @@
 ## Dubbo x Spring Boot to Develop Microservice Applications
 
-### How to Run:
+### 1. Run the Zookeeper Container
+Execute the following command to pull the image (if not already available) and run the Zookeeper container:
+
+```bash
+docker run --name zookeeper -p 2181:2181 -d zookeeper
+```
+
+### 2. Run the Application:
 The first is to start `org.apache.dubbo.springboot.demo.provider.ProviderApplication`, 
 wait for a while to appear the log as shown in the figure below (Current Spring Boot Application is await), 
 which means that the service provider has started, 
@@ -19,4 +26,4 @@ which means that the service consumer is started and the call to the server is s
 Receive result ======> Hello world
 ```
 
-**Reference:** [3 - Dubbo x Spring Boot to develop microservice applications](https://dubbo.apache.org/en/docs3-v2/java-sdk/quick-start/spring-boot/)
+**Reference:** *[3 - Dubbo x Spring Boot to develop microservice applications](https://dubbo.apache.org/en/docs3-v2/java-sdk/quick-start/spring-boot/)*
