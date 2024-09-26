@@ -1,5 +1,6 @@
-## Dubbo x Spring Boot to Develop Microservice Applications
+# Dubbo x Spring Boot to Develop Microservice Applications
 
+## How To Setup Locally:
 ### 1. Run the Zookeeper Container
 Execute the following command to pull the image (if not already available) and run the Zookeeper container:
 
